@@ -1,3 +1,17 @@
+tap 'homebrew/bundle'
 tap 'thoughtbot/formulae'
-brew 'rcm'
+brew 'git'
+brew 'heroku'
+brew 'hub'
+brew 'libffi'
+brew 'libyaml'
+brew 'node'
+brew 'postgresql', restart_service: true
+brew 'rbenv'
+brew 'rbenv-default-gems'
+brew 'ruby-build'
+brew 'thoughtbot/formulae/rcm'
+brew 'yarn'
+cask 'google-chrome'
+cask 'rubymine'
 

@@ -27,3 +27,9 @@ Install `rcm` and everything else from the Brewfile:
     $ cd ~/.dotfiles
     $ brew bundle
 
+## Usage
+
+Link your dotfiles into your home directory with `rcup`, excluding the `Brewfile` and `README.md`:
+
+    $ rcup -v -x Brewfile -x README.md
+

@@ -1,0 +1,11 @@
+[credential]
+	helper = osxkeychain
+[core]
+	pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+[hub]
+	protocol = https
+[mergetool]
+	keepBackup = false
+[user]
+	name = Sebastian Röder
+	email = sebroeder@users.noreply.github.com
