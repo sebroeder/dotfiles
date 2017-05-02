@@ -11,6 +11,7 @@ brew 'rbenv'
 brew 'rbenv-default-gems'
 brew 'ruby-build'
 brew 'thoughtbot/formulae/rcm'
+brew 'vim', args: ['with-custom-perl', 'with-custom-python', 'with-custom-ruby']
 brew 'yarn'
 cask 'google-chrome'
 cask 'rubymine'
