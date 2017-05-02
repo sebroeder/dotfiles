@@ -1,5 +1,6 @@
 tap 'homebrew/bundle'
 tap 'thoughtbot/formulae'
+brew 'fish'
 brew 'git'
 brew 'heroku'
 brew 'hub'
