@@ -1,5 +1,6 @@
 tap 'homebrew/bundle'
 tap 'thoughtbot/formulae'
+brew 'aspell', args: ['with-lang-de']
 brew 'fish'
 brew 'git'
 brew 'heroku'
