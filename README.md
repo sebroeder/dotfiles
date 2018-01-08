@@ -6,30 +6,35 @@
 
 ## Installation on macOS
 
-Install the Xcode Command Line Tools:
-
-    $ xcode-select --install
-
 Install [Homebrew](brew.sh):
 
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Install [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle):
+Install `rcm` with Homebrew:
 
+    brew install 'thoughtbot/formulae/rcm'
+	
+Clone this repository:
+
+    $ git clone https://github.com/sebroeder/dotfiles ~/Developer/public/sebroeder/dotfiles
+
+
+Alternative: Install `rcm` and everything else from a Brewfile with [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle):
+
+    $ cd ~/Developer/public/sebroeder/dotfiles
     $ brew tap Homebrew/bundle
-
-Clone this repository into `~/.dotfiles`:
-
-    $ git clone https://github.com/sebroeder/dotfiles ~/.dotfiles
-
-Install `rcm` and everything else from the Brewfile:
-
-    $ cd ~/.dotfiles
     $ brew bundle
 
 ## Usage
 
-Link your dotfiles into your home directory with `rcup`, excluding the `Brewfile` and `README.md`:
+Check which files would be linked with `lsrc`:
 
-    $ rcup -v -x Brewfile -x README.md
+    $ lsrc -v -d ~/Developer/public/sebroeder/dotfiles
+
+Link your dotfiles into your home directory with `rcup`:
+
+    # Link `rcm`s config file `rcrc` first (only needed once)
+    $ rcup -v -d ~/Developer/public/sebroeder/dotfiles rcrc
+    # Link everything else according to config file
+    $ rcup -v
 

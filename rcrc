@@ -1,2 +1,3 @@
-EXCLUDES="Brewfile README.md"
-
+DOTFILES_DIRS="$HOME/Developer/public/sebroeder/dotfiles"
+EXCLUDES="Brewfile README.md dicts"
+TAGS="fish git vim"
