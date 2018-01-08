@@ -41,3 +41,6 @@ Thumbs.db
 # Jetbrains IDE project folders
 .idea/
 
+# Visual Studio Code files
+.vscode/
+
