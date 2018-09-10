@@ -21,7 +21,7 @@ Clone this repository:
 
 Alternative: Install `rcm` and everything else from a Brewfile with [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle):
 
-    $ cd ~/Developer/github/sebroeder/dotfiles
+    $ cd ~/Developer/sebroeder/dotfiles
     $ brew tap Homebrew/bundle
     $ brew bundle
 
@@ -29,12 +29,12 @@ Alternative: Install `rcm` and everything else from a Brewfile with [Homebrew Bu
 
 Check which files would be linked with `lsrc`:
 
-    $ lsrc -v -d ~/Developer/github/sebroeder/dotfiles
+    $ lsrc -v -d ~/Developer/sebroeder/dotfiles
 
 Link your dotfiles into your home directory with `rcup`:
 
     # Link `rcm`s config file `rcrc` first (only needed once)
-    $ rcup -v -d ~/Developer/github/sebroeder/dotfiles rcrc
+    $ rcup -v -d ~/Developer/sebroeder/dotfiles rcrc
     # Link everything else according to config file
     $ rcup -v
 
